@@ -1,4 +1,5 @@
 import { createStore } from "vuex";
+import { reactive } from "vue";
 
 export default createStore({
   state: {},
@@ -7,3 +8,5 @@ export default createStore({
   actions: {},
   modules: {},
 });
+
+export const GStore = reactive({ flashMessage: "", event: null });
