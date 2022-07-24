@@ -2,8 +2,9 @@ import { createRouter, createWebHistory } from "vue-router";
 import EventRegister from "../views/event/Register";
 import EventDetails from "../views/event/Details";
 import EventLayout from "../views/event/Layout";
+import EventCreate from "../views/event/Create";
 import EventEdit from "../views/event/Edit";
-import EventList from "../views/EventList";
+import EventList from "../views/event/List";
 import NotFound from "../views/NotFound";
 import NetworkError from "../views/NetworkError";
 import NProgress from "nprogress";
@@ -16,6 +17,11 @@ const routes = [
     name: "EventList",
     component: EventList,
     props: (route) => ({ page: parseInt(route.query.page) || 1 }),
+  },
+  {
+    path: "/event/create",
+    name: "EventCreate",
+    component: EventCreate,
   },
   {
     props: true,

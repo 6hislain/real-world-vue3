@@ -2,7 +2,7 @@ import { createStore } from "vuex";
 import { reactive } from "vue";
 
 export default createStore({
-  state: {},
+  state: { user: "6hislain" },
   getters: {},
   mutations: {},
   actions: {},
