@@ -34,6 +34,9 @@ export default {
   data() {
     return { events: null, totalEvents: 0 };
   },
+  // created() {
+  //   this.$store.dispatch("fetchEvents");
+  // },
   beforeRouteEnter(routeTo, routeFrom, next) {
     EventService.getEvents(2, parseInt(routeTo.query.page) || 1)
       .then((response) => {
@@ -61,6 +64,9 @@ export default {
       let totalPages = Math.ceil(this.totalEvents / 2);
       return this.page < totalPages;
     },
+    // events() {
+    //   return this.$store.state.events
+    // }
   },
 };
 </script>

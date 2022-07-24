@@ -43,9 +43,9 @@
   </div>
 </template>
 <script>
-import { v4 as uuidv4 } from "uuid";
 export default {
   name: "EventCreate",
+  inject: ["GStore"],
   data() {
     return {
       categories: [
@@ -71,9 +71,25 @@ export default {
   },
   methods: {
     onSubmit() {
-      this.event.id = uuidv4();
-      this.event.organizer = this.$store.state.user;
-      console.log("Event: ", this.event);
+      const event = {
+        ...this.event,
+        id: Math.random() * 10 ** 16,
+        organizer: this.$store.state.user,
+      };
+      this.$store
+        .dispatch("createEvent", event)
+        .then(() => {
+          this.GStore.flashMessage =
+            "You have succesfully created a new event: " + this.event.title;
+          setTimeout(() => {
+            this.GStore.flashMessage = "";
+          }, 3000);
+
+          this.$router.push({ name: "EventDetails", params: { id: event.id } });
+        })
+        .catch((error) => {
+          this.$router.push({ name: "ErrorDisplay", params: { error } });
+        });
     },
   },
 };

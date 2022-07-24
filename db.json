@@ -1,1 +1,134 @@
-{}
+{
+  "events": [
+    {
+      "id": 123,
+      "category": "animal welfare",
+      "title": "Cat Adoption Day",
+      "description": "Find your new feline friend at this event.",
+      "location": "Meow Town",
+      "date": "January 28, 2022",
+      "time": "12:00",
+      "organizer": "Kat Laydee"
+    },
+    {
+      "id": 456,
+      "category": "food",
+      "title": "Community Gardening",
+      "description": "Join us as we tend to the community edible plants.",
+      "location": "Flora City",
+      "date": "March 14, 2022",
+      "time": "10:00",
+      "organizer": "Fern Pollin"
+    },
+    {
+      "id": 789,
+      "category": "sustainability",
+      "title": "Beach Cleanup",
+      "description": "Help pick up trash along the shore.",
+      "location": "Playa Del Carmen",
+      "date": "July 22, 2022",
+      "time": "11:00",
+      "organizer": "Carey Wales"
+    },
+    {
+      "id": 7562657266.867166,
+      "category": "nature",
+      "title": "Take a work",
+      "description": "at night in the dark",
+      "location": "here, or there",
+      "date": "2/2/2022",
+      "time": "4 pm",
+      "organizer": "6hislain"
+    },
+    {
+      "id": 9077231886692540,
+      "category": "community",
+      "title": "House party",
+      "description": "let's get high",
+      "location": "home",
+      "date": "1/1/2010",
+      "time": "1 am",
+      "organizer": "6hislain"
+    },
+    {
+      "id": 738007379884189.1,
+      "category": "education",
+      "title": "vuex fundamentals",
+      "description": "no description",
+      "location": "online",
+      "date": "1/1/2001",
+      "time": "1 am",
+      "organizer": "6hislain"
+    },
+    {
+      "id": 1567441695635631.8,
+      "category": "animal welfare",
+      "title": "adopt a snake",
+      "description": "let's get crazy",
+      "location": "zoo",
+      "date": "8/8/2008",
+      "time": "8 pm",
+      "organizer": "6hislain"
+    },
+    {
+      "id": 3307333143931683.5,
+      "category": "community",
+      "title": "tea  party",
+      "description": "drink tea and coffee",
+      "location": "bakery",
+      "date": "3/3/2013",
+      "time": "3 am",
+      "organizer": "6hislain"
+    },
+    {
+      "id": 9247423834265124,
+      "category": "sustainability",
+      "title": "recycle water",
+      "description": "again",
+      "location": "paris",
+      "date": "1/1/2001",
+      "time": "1 pm",
+      "organizer": "6hislain"
+    },
+    {
+      "id": 2976955733052810.5,
+      "category": "sustainability",
+      "title": "people are crazy",
+      "description": "nothing to see here",
+      "location": "somewhere",
+      "date": "1/1/2011",
+      "time": "2 am",
+      "organizer": "6hislain"
+    },
+    {
+      "id": 902602254253368.5,
+      "category": "education",
+      "title": "go to school",
+      "description": "forget what you learnt",
+      "location": "no where",
+      "date": "1/2/2022",
+      "time": "3 am",
+      "organizer": "6hislain"
+    },
+    {
+      "id": 2527948728199796,
+      "category": "animal welfare",
+      "title": "ok",
+      "description": "go",
+      "location": "home",
+      "date": "1/2/2022",
+      "time": "4 pm",
+      "organizer": "6hislain"
+    },
+    {
+      "id": 7970433111612059,
+      "category": "housing",
+      "title": "there",
+      "description": "ok",
+      "location": "no",
+      "date": "2902",
+      "time": "sfs",
+      "organizer": "6hislain"
+    }
+  ]
+}

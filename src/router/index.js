@@ -1,15 +1,16 @@
 import { createRouter, createWebHistory } from "vue-router";
-import EventRegister from "../views/event/Register";
-import EventDetails from "../views/event/Details";
-import EventLayout from "../views/event/Layout";
-import EventCreate from "../views/event/Create";
-import EventEdit from "../views/event/Edit";
-import EventList from "../views/event/List";
-import NotFound from "../views/NotFound";
-import NetworkError from "../views/NetworkError";
+import EventRegister from "@/views/event/Register";
+import EventDetails from "@/views/event/Details";
+import EventLayout from "@/views/event/Layout";
+import EventCreate from "@/views/event/Create";
+import EventEdit from "@/views/event/Edit";
+import EventList from "@/views/event/List";
+import NotFound from "@/views/NotFound";
+import NetworkError from "@/views/NetworkError";
 import NProgress from "nprogress";
 import EventService from "@/services/EventService";
 import { GStore } from "@/store";
+import ErrorDisplay from "@/views/ErrorDisplay";
 
 const routes = [
   {
@@ -61,9 +62,9 @@ const routes = [
   },
   {
     path: "/about",
-    name: "About",
+    name: "AboutView",
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/AboutView"), // code splitting, lazy loading
+      import(/* webpackChunkName: "about" */ "@/views/AboutView"), // code splitting, lazy loading
   },
   { path: "/:catchAll(.*)", name: "NotFound", component: NotFound },
   {
@@ -73,6 +74,12 @@ const routes = [
     props: true,
   },
   { path: "/network-error", name: "NetworkError", component: NetworkError },
+  {
+    path: "/error/:error",
+    name: "ErrorDisplay",
+    props: true,
+    component: ErrorDisplay,
+  },
 ];
 
 const router = createRouter({
